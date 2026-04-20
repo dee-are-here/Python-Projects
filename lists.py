@@ -11,6 +11,11 @@ import random
 
 # print(states_of_america)
 
-friends = ["Alice", "Bob", "Charlie", "David", "Emanuel"]
-random_friend = random.choice(friends)
-print(random_friend)
+# friends = ["Alice", "Bob", "Charlie", "David", "Emanuel"]
+# random_friend = random.choice(friends)
+# print(random_friend)
+
+fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"]
+vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
+dirty_dozen = [fruits, vegetables]
+print(dirty_dozen)
