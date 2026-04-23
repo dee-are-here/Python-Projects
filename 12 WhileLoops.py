@@ -26,6 +26,23 @@ def jump():
 
 number_of_hurdles = 6
 while number_of_hurdles > 0:
+    at_goal(False)
     jump()
     number_of_hurdles -= 1
+    # This will print the number of hurdles left after
     print(number_of_hurdles)
+    # each jump
+
+
+while at_goal() == False:  # or while not at_goal(), will work, too
+    jump()  # This will continue to run until at_goal() returns True
+
+
+while not at_goal():
+    if wall_in_front():
+        jump()
+    else:
+        move()  # This will continue to run until at_goal() returns True,
+        # but it will also check if there is a wall in front of the robot.
+        # If there is a wall, it will jump. If there is no wall,
+        # it will move forward.
