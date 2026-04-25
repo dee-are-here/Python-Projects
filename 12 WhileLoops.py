@@ -46,3 +46,26 @@ while not at_goal():
         # but it will also check if there is a wall in front of the robot.
         # If there is a wall, it will jump. If there is no wall,
         # it will move forward.
+
+
+# This is my program. It will continue to run until the robot reaches the goal.
+# It will check if there is a wall in front of the robot.
+# If there is a wall, it will jump. If there is no wall, it will move forward.
+
+def jump():
+    turn_left()
+    while wall_on_right():
+        move()
+    turn_right()
+    move()
+    turn_right()
+    while front_is_clear():
+        move()
+    turn_left()
+
+
+while not at_goal():
+    if wall_in_front():
+        jump()
+    else:
+        move()

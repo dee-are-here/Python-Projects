@@ -37,4 +37,11 @@
 
 
 # This is my program
-print("This will run")
+# print("This will run")
+
+x = [1, 2, 3]
+y = x
+
+x = x + [4]
+print(x)
+print(y)
